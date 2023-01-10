@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.caja {
+  width: 20em;
+  padding: 3em;
+}
+
+.caja .textos h1 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: white;
+  padding: 1em 0 1em 0;
+}
+
+.caja .textos p {
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.caja .textos div {
+  width: 10em;
+  margin-top: 7em;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  border-radius: 12em;
+  border-color: white;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1em;
+}
+
+
+.caja-sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+.caja-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.caja-luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+@media screen and (max-width: 700px) {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .caja .textos div {
+      margin-top: 3em;
+    }
+
+    .caja-sedans {
+      border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .caja-luxury {
+      border-radius: 0 0 0.5em 0.5em;
+    }
+    
+}
